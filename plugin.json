@@ -6,7 +6,7 @@
   "data": [
     {
       "name": "Buondua",
-      "author": "hieu05",
+      "author": "DrS",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/buondua/plugin.zip",
       "version": 1,
       "source": "https://buondua.com/",
@@ -30,7 +30,7 @@
     },
     {
       "name": "Góc Truyện Tranh",
-      "author": "Kou",
+      "author": "DrS",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/goctruyentranhvui/plugin.zip",
       "version": 1,
       "source": "https://goctruyentranhvui2.com/",
@@ -41,7 +41,7 @@
     },
     {
       "name": "vlogtruyen",
-      "author": "Nhocconsr",
+      "author": "DrS",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/plugin.zip",
       "version": 1,
       "source": "https://vlogtruyen.com",
