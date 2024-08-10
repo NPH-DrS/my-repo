@@ -6,7 +6,7 @@
   "data": [
     {
       "name": "Buondua",
-      "author": "DrS",
+      "author": "hieu05",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/buondua/plugin.zip",
       "version": 1,
       "source": "https://buondua.com/",
@@ -14,7 +14,7 @@
       "description": "Tập Hợp Album của Xiuren...",
       "locale": "vi_VN",
       "tag": "nsfw",
-      "type": "comic",
+      "type": "comic"
     },
     {
       "name": "Cosplay Tele",
@@ -26,29 +26,29 @@
       "description": "Album & Video Cosplay",
       "locale": "vi_VN",
       "tag": "nsfw",
-      "type": "comic",
+      "type": "comic"
     },
     {
       "name": "Góc Truyện Tranh",
-      "author": "DrS",
+      "author": "Kou",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/goctruyentranhvui/plugin.zip",
       "version": 1,
       "source": "https://goctruyentranhvui2.com/",
       "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/goctruyentranhvui/icon.png",
       "description": "Xem truyện tại Góc truyện tranh",
       "locale": "vi_VN",
-      "type": "comic",
+      "type": "comic"
     },
     {
       "name": "vlogtruyen",
-      "author": "DrS",
+      "author": "Nhocconsr",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/plugin.zip",
       "version": 1,
       "source": "https://vlogtruyen.com",
       "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/icon.png",
       "description": "Xem truyện tại Vlogtruyen",
       "locale": "vi_VN",
-      "type": "comic",
+      "type": "comic"
     }
   ]
 }
