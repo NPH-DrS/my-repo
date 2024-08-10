@@ -30,7 +30,7 @@
     },
     {
       "name": "Góc Truyện Tranh",
-      "author": "DrS",
+      "author": "Kou",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-extensions/master/goctruyentranhvui/plugin.zip",
       "version": 1,
       "source": "https://goctruyentranhvui2.com/",
@@ -41,7 +41,7 @@
     },
     {
       "name": "vlogtruyen",
-      "author": "DrS",
+      "author": "Nhocconsr",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-extensions/master/vlogtruyen/plugin.zip",
       "version": 1,
       "source": "https://vlogtruyen.com",
