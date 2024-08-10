@@ -7,9 +7,8 @@ function execute(url) {
          const contentElement = doc.select("blockquote"); // Assuming the content is within a blockquote element
 
          let stt = "";
-         const cosplayerName = cosplayerLink.text().trim();
          const photosLine = contentElement.select("p:nth-child(2) strong:nth-child(1)").text().trim();
-         stt += `Cosplayer: ${cosplayerName}. ${photosLine}.`;
+         stt += `${photosLine}.`;
         
         return Response.success({
             name: doc.select("title").first().text(),
