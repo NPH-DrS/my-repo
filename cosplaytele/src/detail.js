@@ -8,12 +8,12 @@ function execute(url) {
 
         let stt = "";
 
-        const cosplayerLink = contentElement.select("p.gt-block strong a").attr("href");
-        const cosplayerName = contentElement.select("p.gt-block strong a").text().trim();
+        const cosplayerLink = contentElement.select("p strong a").attr("href");
+        const cosplayerName = contentElement.select("p strong a").text().trim();
         stt += `Cosplayer: ${cosplayerName} <br>(Link: ${cosplayerLink})`;
 
-        const appearInLink = contentElement.select("p.gt-block strong:nth-child(3) a").attr("href");  // Optional for "Appear In" field
-        const appearIn = contentElement.select("p.gt-block strong:nth-child(3)").text().trim();
+        const appearInLink = contentElement.select("p strong:nth-child(3) a").attr("href");  // Optional for "Appear In" field
+        const appearIn = contentElement.select("p strong:nth-child(3)").text().trim();
         if (appearIn) {
             stt += `<br>Appear In: ${appearIn} <br>(Link: ${appearInLink})\n`;  // Include link if available
         }
