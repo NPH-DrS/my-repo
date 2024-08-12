@@ -25,7 +25,6 @@ function execute(url) {
             author: contentElement.select("p strong:nth-child(5) a").text().trim(),
             genres,
             detail: `Cosplayer: ${cosplayerName})<br>${characterName}<br>${photosLine}<br>${fileSize}`,
-            description: doc.select('meta[property="og:image"]').first().attr("content"),
             host: BASE_URL,
         });
     }
