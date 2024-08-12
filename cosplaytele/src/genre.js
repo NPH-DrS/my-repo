@@ -10,7 +10,8 @@ function execute() {
 
     if (response.ok) {
         let doc = response.html(); 
-        doc.select(".row .col").forEach(col => {
+        doc.select(".row-small").forEach(row =>{
+            row.select(".col").forEach(col => {
                const titleElement = col.select(".text a").first();
                const title = titleElement.text().trim();
                const link = titleElement.attr("href");
@@ -20,7 +21,8 @@ function execute() {
                     input: "category/" + link.split("/")[4] + "/",
                     script: "gen.js"
                    });
-         });
+             });
+        });
     }
 
     return Response.success(data);
