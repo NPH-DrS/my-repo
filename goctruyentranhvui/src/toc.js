@@ -16,15 +16,13 @@ function execute(url) {
         let data = [];
         for (let i = allChap.length -1; i >= 0; i--) {
             let chap = allChap[i]
-            if(chap.type !== 'DOUBLE') {
-                data.push({
-                    name: '#'+ chap.numberChapter,
-                    url: url + '/chuong-'+chap.numberChapter,
-                    host: BASE_URL + '/danh-sach'
-                })
-            }
+            data.push({
+                name: '#'+ chap.numberChapter,
+                url: url + '/chuong-'+chap.numberChapter,
+                host: BASE_URL + '/danh-sach'
+            });
         }
-        return Response.success(data)
+        return Response.success(data);
     }
     return null;
 }
