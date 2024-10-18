@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Góc Truyện Tranh",
-    "author": "Kou",
+    "author": "DrS",
     "version": 11,
     "source": "https://goctruyentranhvui3.com/",
     "regexp": "(www.)?goctruyentranhvui3.com/truyen/[0-9a-z-]+/?",
