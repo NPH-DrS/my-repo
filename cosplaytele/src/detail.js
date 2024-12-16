@@ -13,9 +13,11 @@ function execute(url) {
             });
         });
 
+        
+
         return Response.success({
             name: doc.select("title").first().text(),
-            cover: doc.select('.gallery-item img').first().attr("src"),
+            cover: doc.select('.title-bg').attr("style").split("\'")[1],
             author: "cosplaytele",
             genres,
             detail: doc.select("blockquote").text(),
