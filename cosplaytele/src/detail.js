@@ -13,18 +13,12 @@ function execute(url) {
             });
         });
 
-        const contentElement = doc.select("blockquote");
-        const cosplayerName = contentElement.select("p strong a").text().trim();
-        const characterName = contentElement.select("p strong:nth-child(3)").text().trim();
-        const photosLine = contentElement.select("p:nth-child(2) strong:nth-child(1)").text().trim();
-        const fileSize = contentElement.select("p:nth-child(2) strong:nth-child(3)").text().trim();
-
         return Response.success({
             name: doc.select("title").first().text(),
-            cover: doc.select('meta[property="og:image"]').first().attr("content"),
-            author: contentElement.select("p strong:nth-child(5) a").text().trim(),
+            cover: doc.select('.gallery-item img').first().attr("src"),
+            author: "cosplaytele",
             genres,
-            detail: `Cosplayer: ${cosplayerName})<br>${characterName}<br>${photosLine}<br>${fileSize}`,
+            detail: doc.select("blockquote").text(),
             host: BASE_URL,
         });
     }
