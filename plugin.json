@@ -17,7 +17,7 @@
       "type": "comic"
     },
     {
-      "name": "Cosplay Tele",
+      "name": "Cosplaytele",
       "author": "DrS",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/cosplaytele/plugin.zip",
       "version": 1,
@@ -29,24 +29,24 @@
       "type": "comic"
     },
     {
-      "name": "Góc Truyện Tranh",
-      "author": "DrS",
-      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/goctruyentranhvui/plugin.zip",
-      "version": 1,
-      "source": "https://goctruyentranhvui2.com/",
-      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/goctruyentranhvui/icon.png",
-      "description": "Xem truyện tại Góc truyện tranh",
-      "locale": "vi_VN",
-      "type": "comic"
-    },
-    {
-      "name": "vlogtruyen",
+      "name": "Vlogtruyen",
       "author": "DrS",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/plugin.zip",
       "version": 1,
       "source": "https://vlogtruyen.com",
       "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/icon.png",
       "description": "Xem truyện tại Vlogtruyen",
+      "locale": "vi_VN",
+      "type": "comic"
+    },
+    {
+      "name": "Vi-Hentai",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vi-hentai/plugin.zip",
+      "version": 1,
+      "source": "https://vi-hentai.com/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vi-hentai/icon.png",
+      "description": "Xem truyện tại Vi-Hentai",
       "locale": "vi_VN",
       "type": "comic"
     }
