@@ -1,7 +1,7 @@
 function execute(url, page) {
     if (!page) page = "1";
 
-    let response = fetch(url + `?page=${page}`, {
+    let response = fetch(url + `page=${page}`, {
         method : "GET"
     })
     
