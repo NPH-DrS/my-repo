@@ -10,7 +10,7 @@ function execute(url, page) {
         let data = [];
         
         doc.select(".manga-vertical").forEach(e => {
-            var style = e.select(".cover").attr("style")
+            var style = e.select(".bg-cover").attr("style")
             data.push({
                 name: e.select(".p-2 a").text().trim(),
                 link: "https://vi-hentai.com" + e.select(".p-2 a").attr("href"),
