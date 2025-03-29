@@ -1,7 +1,7 @@
 function execute(url, page) {
     if (!page) page = "1";
 
-    let response = fetch(url + `page=${page}`, {
+    let response = fetch(url + `?page=${page}`, {
         method : "GET"
     })
     
@@ -15,7 +15,7 @@ function execute(url, page) {
                 name: e.select(".p-2 a").text().trim(),
                 link: "https://vi-hentai.com" + e.select(".p-2 a").attr("href"),
                 description: e.select(".relative .latest-chapter").text(),
-                cover: style.substring(style.indexOf("url") + 5, style.indexOf("')"))
+                cover: style.substring(style.indexOf("https"), style.indexOf("')"))
             })
         });
 
