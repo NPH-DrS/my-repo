@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "name": "Vi-hentai",
+    "name": "Manwa210",
     "author": "DrS",
     "version": 1,
-    "source": "https://vi-hentai.moe",
-    "regexp": "https://vi-hentai.moe/.+",
+    "source": "https://manhwa210.com",
+    "regexp": "https://manhwa210.com/.+",
     "description": "",
-    "local": "vi-VN",
+    "local": "en-EN",
     "tag": "nsfw",
     "type": "comic",
     "language": "javascript"

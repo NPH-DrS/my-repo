@@ -2,14 +2,14 @@ load('config.js');
 function execute(key, page) {
     if (!page) page = "1";
 
-    let response = fetch(`${BASE_URL}/tim-kiem?filter%5Bname%5D=${key}&page=${page}`, {
-        method : "GET"
+    let response = fetch(BASE_URL + `/tim-kiem?filter%5Bname%5D=${key}&page=${page}`, {
+        method: "GET"
     })
-    
+
     if (response.ok) {
         let doc = response.html();
         let data = [];
-        
+
         doc.select(".manga-vertical").forEach(e => {
             var style = e.select(".cover").attr("style")
             data.push({

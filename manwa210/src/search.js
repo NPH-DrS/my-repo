@@ -1,8 +1,8 @@
 load('config.js');
-function execute(url, page) {
-    if (!page) page = 1;
+function execute(key, page) {
+    if (!page) page = "1";
 
-    let response = fetch(url + `page=${page}`, {
+    let response = fetch(BASE_URL + `/search?filter%5Bname%5D=${key}&page=${page}`, {
         method: "GET"
     })
 
@@ -16,12 +16,17 @@ function execute(url, page) {
                 name: e.select(".p-2 a").text().trim(),
                 link: BASE_URL + e.select(".p-2 a").attr("href"),
                 description: e.select(".relative .latest-chapter").text(),
-                cover: style.substring(style.indexOf("https"), style.indexOf("')"))
+                cover: style.substring(style.indexOf("url") + 5, style.indexOf("')"))
             })
         });
 
-        return Response.success(data, ++page);
+
+        var nextInt = parseInt(page);
+        nextInt++;
+        var next = nextInt.toString();
+
+        return Response.success(data, next);
     }
 
-    return null
+    return null;
 }
