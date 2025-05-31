@@ -1,5 +1,6 @@
+load('config.js');
 function execute() {
-    let response = fetch("https://vi-hentai.com/#", {
+    let response = fetch(BASE_URL + "/#", {
         method : "GET"
     });
 
@@ -10,7 +11,7 @@ function execute() {
         doc.select("ul.absolute a").forEach(e =>{
             data.push({
                 title: e.select("li span").text().trim(),
-                input: "https://vi-hentai.com/" + e.attr("href"),
+                input: BASE_URL + e.attr("href"),
                 script: "gen.js"
             });
         });

@@ -1,7 +1,8 @@
+load('config.js');
 function execute(key, page) {
     if (!page) page = "1";
 
-    let response = fetch(`https://vi-hentai.com/tim-kiem?filter%5Bname%5D=${key}&page=${page}`, {
+    let response = fetch(`${BASE_URL}/tim-kiem?filter%5Bname%5D=${key}&page=${page}`, {
         method : "GET"
     })
     
@@ -13,7 +14,7 @@ function execute(key, page) {
             var style = e.select(".cover").attr("style")
             data.push({
                 name: e.select(".p-2 a").text().trim(),
-                link: "https://vi-hentai.com" + e.select(".p-2 a").attr("href"),
+                link: BASE_URL + e.select(".p-2 a").attr("href"),
                 description: e.select(".relative .latest-chapter").text(),
                 cover: style.substring(style.indexOf("url") + 5, style.indexOf("')"))
             })
