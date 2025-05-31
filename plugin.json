@@ -44,10 +44,21 @@
       "author": "DrS",
       "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vi-hentai/plugin.zip",
       "version": 1,
-      "source": "https://vi-hentai.com/",
+      "source": "https://vi-hentai.moe/",
       "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vi-hentai/icon.png",
       "description": "Xem truyện tại Vi-Hentai",
       "locale": "vi_VN",
+      "type": "comic"
+    },
+    {
+      "name": "Manwa210",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/manwa210/plugin.zip",
+      "version": 1,
+      "source": "https://manwa210.com/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/manwa210/icon.png",
+      "description": "",
+      "locale": "en_EN",
       "type": "comic"
     }
   ]
