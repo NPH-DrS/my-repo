@@ -2,7 +2,7 @@ load('config.js');
 function execute(key, page) {
     if (!page) page = "0";
 
-    let response = fetch(BASE_URL + `?s=${key}`, {
+    let response = fetch(BASE_URL + `page/${page}/?s=${key}`, {
         method : "GET"
     });
 
@@ -18,7 +18,10 @@ function execute(key, page) {
              })
        });
 
-        return Response.success(data);
+        var nextInt = parseInt(page);
+        nextInt++;
+        var next = nextInt.toString();
+        return Response.success(data, next);
     }
     return null;
 }

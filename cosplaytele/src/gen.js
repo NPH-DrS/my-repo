@@ -22,9 +22,6 @@ function execute(url, page) {
         var nextInt = parseInt(page);
         nextInt++;
         var next = nextInt.toString();
-        if(next === "350"){
-              return null;
-        }
         return Response.success(data, next);
     }
     return null;
